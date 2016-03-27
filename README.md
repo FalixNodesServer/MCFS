@@ -1,2 +1,0 @@
-# MCFS
-Minecraft Forge Server
