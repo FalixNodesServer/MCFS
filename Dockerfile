@@ -66,7 +66,8 @@ VOLUME ["$MCSERVER_PATH"]
 
 WORKDIR /srv/minecraft-bin
 COPY minecraft /usr/local/bin/
-RUN chmod +x /usr/local/bin/minecraft && /usr/local/bin/minecraft install
+COPY mcins.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/mcins.sh
 
 EXPOSE $SERVER_PORT
 EXPOSE $RCON_PORT
