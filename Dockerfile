@@ -66,7 +66,7 @@ VOLUME ["$MCSERVER_PATH"]
 
 WORKDIR /srv/minecraft-bin
 COPY minecraft /usr/local/bin/
-RUN chmod +x /usr/local/bin/minecraft; sync; /usr/local/bin/minecraft install
+RUN chmod +x /usr/local/bin/minecraft && /usr/local/bin/minecraft install
 
 EXPOSE $SERVER_PORT
 EXPOSE $RCON_PORT
