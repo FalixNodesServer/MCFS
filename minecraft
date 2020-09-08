@@ -90,7 +90,7 @@ first_run() {
         echo "white-list=$WHITE_LIST" | tee -a $MCSERVER_PATH/server.properties
         echo "spawn-animals=$SPAWN_ANIMALS" | tee -a $MCSERVER_PATH/server.properties
         echo "snooper-enabled=$SNOOPER_ENABLED" | tee -a $MCSERVER_PATH/server.properties
-        echo "online-mode=$ONLINE_MODE" | tee -a $MCSERVER_PATH/server.properties
+        echo "online-mode=$OFFLINE_MODE" | tee -a $MCSERVER_PATH/server.properties
         echo "resource-pack=$RESOURCE_PACK" | tee -a $MCSERVER_PATH/server.properties
         echo "pvp=$PVP" | tee -a $MCSERVER_PATH/server.properties
         echo "difficulty=$DIFFICULTY" | tee -a $MCSERVER_PATH/server.properties
